@@ -1,0 +1,19 @@
+User-Agent: *
+Disallow: /page11263927.html
+Disallow: /page11264356.html
+Disallow: /page11388687.html
+Disallow: /errorpage
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://ganjamountain.wtf/sitemap.xml
+Host: https://ganjamountain.wtf

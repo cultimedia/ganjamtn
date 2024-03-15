@@ -1,0 +1,30 @@
+ErrorDocument 403 /page11388687.html
+ErrorDocument 404 /page11388687.html
+
+DirectoryIndex page7042977.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://ganjamountain\.wtf/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.ganjamountain.wtf [NC]
+RewriteRule ^(.*)$ https://ganjamountain\.wtf/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^terms$ page11387828.html [NC]
+RewriteRule ^terms/$ page11387828.html [NC]
+
+RewriteRule ^privacy$ page11388154.html [NC]
+RewriteRule ^privacy/$ page11388154.html [NC]
+
+RewriteRule ^errorpage$ page11388687.html [NC]
+RewriteRule ^errorpage/$ page11388687.html [NC]
+
+RewriteRule ^dream$ page16660307.html [NC]
+RewriteRule ^dream/$ page16660307.html [NC]
+
+
